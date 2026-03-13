@@ -34,6 +34,99 @@
     }
 
 </script>
+<style>
+  #network-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const canvas = document.createElement('canvas');
+  canvas.id = 'network-canvas';
+  document.body.insertBefore(canvas, document.body.firstChild);
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  let time = 0;
+  
+  function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+  window.addEventListener('resize', resize);
+  resize();
+  
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.vx = (Math.random() - 0.5) * 0.3;
+      this.vy = (Math.random() - 0.5) * 0.3;
+      this.size = Math.random() * 2 + 1;
+      this.baseAlpha = Math.random() * 0.3 + 0.3;
+    }
+    update() {
+      this.x += this.vx; this.y += this.vy;
+      if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+    }
+    draw() {
+      const alpha = this.baseAlpha + Math.sin(time * 0.02 + this.x * 0.01) * 0.15;
+      ctx.fillStyle = `rgba(0, 160, 255, ${alpha})`;
+      ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
+    }
+  }
+  
+  for (let i = 0; i < 100; i++) particles.push(new Particle());
+  
+  function animate() {
+    time++;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => { p.update(); p.draw(); });
+    
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 180) {
+          const lineAlpha = (0.25 * (1 - dist/180)) + Math.sin(time * 0.03 + dist * 0.01) * 0.1;
+          ctx.strokeStyle = `rgba(0, 170, 255, ${lineAlpha})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y); ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const currentDomain = window.location.hostname;
+  
+  document.querySelectorAll('a').forEach(link => {
+    const href = link.getAttribute('href');
+    
+    
+    if (href && href.startsWith('http') && !href.includes(currentDomain)) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>
 </head>
 <body id="top">
     <header class="header">
@@ -61,6 +154,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="http://localhost:1313/de/" title="Deutsch"
+                                aria-label="Deutsch">De</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -79,6 +178,11 @@
                     <span class="active">Über mich</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="Kontakt">
+                    <span>Kontakt</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -93,7 +197,7 @@
     <div class="post-description">
       Über Hanspeter Flütsch - Elektro-Monteur turned Software Developer
     </div>
-    <div class="post-meta"><span title='2026-03-13 00:00:00 +0000 UTC'>March 13, 2026</span>&nbsp;·&nbsp;<span>1 min</span>
+    <div class="post-meta"><span title='2026-03-13 00:00:00 +0000 UTC'>March 13, 2026</span>
 
 </div>
   </header> 
@@ -163,7 +267,7 @@
 <li><strong>Einstellung:</strong> Qualität vor Quantität, pragmatische Lösungen</li>
 </ul>
 <hr>
-<p><em>Interesse an einer Zusammenarbeit? <a href="/contact">Kontaktiere mich</a></em></p>
+<p><em>Interesse an einer Zusammenarbeit? <a href="/contact/">Kontaktiere mich</a></em></p>
 
 
   </div>

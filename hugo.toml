@@ -3,18 +3,31 @@ languageCode = 'de-ch'
 title = 'fl-tech&design'
 theme = 'PaperMod'
 
+[languages]
+  [languages.de]
+    languageName = 'Deutsch'
+    weight = 1
+    title = 'fl-tech&design'
+    [languages.de.params]
+      description = 'Portfolio & Tech Projects by Hanspeter Flütsch'
+
+  [languages.en]
+    languageName = 'English'
+    weight = 2
+    title = 'fl-tech&design'
+    [languages.en.params]
+      description = 'Portfolio & Tech Projects by Hanspeter Flütsch'
+
 [params]
   defaultTheme = 'dark'
   ShowShareButtons = true
-  ShowReadingTime = true
   ShowCodeCopyButtons = true
   
+   
   [params.profileMode]
     enabled = true
     title = 'fl-tech&design'
     subtitle = 'Portfolio & Tech Projects by Hanspeter Flütsch'
-    imageUrl = 'img/profile.jpg'
-    imageTitle = 'Hanspeter Flütsch'
     
     [[params.profileMode.buttons]]
       name = 'Projekte'
@@ -41,3 +54,9 @@ theme = 'PaperMod'
   name = "Über mich"
   url = "/about/"
   weight = 3
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Kontakt"
+  url = "/contact/"
+  weight = 4
