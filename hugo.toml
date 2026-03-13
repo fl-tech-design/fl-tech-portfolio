@@ -1,0 +1,43 @@
+baseURL = 'https://fl-tech.ch/'
+languageCode = 'de-ch'
+title = 'fl-tech&design'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'dark'
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  
+  [params.profileMode]
+    enabled = true
+    title = 'fl-tech&design'
+    subtitle = 'Portfolio & Tech Projects by Hanspeter Flütsch'
+    imageUrl = 'img/profile.jpg'
+    imageTitle = 'Hanspeter Flütsch'
+    
+    [[params.profileMode.buttons]]
+      name = 'Projekte'
+      url = 'projects'
+      
+    [[params.profileMode.buttons]]
+      name = 'Über mich'
+      url = 'about'
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projekte"
+  url = "/projects/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "ideas"
+  name = "Ideas"
+  url = "/ideas/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "about"
+  name = "Über mich"
+  url = "/about/"
+  weight = 3

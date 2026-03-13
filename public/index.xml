@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fl-tech&amp;design</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on fl-tech&amp;design</description>
+    <generator>Hugo</generator>
+    <language>de-ch</language>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ideas &amp; Konzepte</title>
+      <link>http://localhost:1313/ideas/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ideas/</guid>
+      <description>Offene Ideen und Konzepte für Collaboration</description>
+    </item>
+    <item>
+      <title>Projekte</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>Ausgewählte Tech-Projekte von fl-tech&amp;amp;design</description>
+    </item>
+    <item>
+      <title>Über mich</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Über Hanspeter Flütsch - Elektro-Monteur turned Software Developer</description>
+    </item>
+  </channel>
+</rss>
