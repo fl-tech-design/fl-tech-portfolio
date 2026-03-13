@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ideas &amp; Konzepte</title>
+      <title>Ideen &amp; Konzepte</title>
       <link>http://localhost:1313/ideas/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ideas/</guid>
-      <description>Offene Ideen und Konzepte für Collaboration</description>
+      <description>Offene Ideen und Konzepte für Zusammenarbeit</description>
     </item>
     <item>
       <title>Kontakt</title>
@@ -21,6 +21,13 @@
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
       <description>Kontaktiere Hanspeter Flütsch für Projekte oder Anfragen</description>
+    </item>
+    <item>
+      <title>Musik</title>
+      <link>http://localhost:1313/musik/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/musik/</guid>
+      <description>Musik von Hanspeter Flütsch - Klavier, Gitarre, Bass</description>
     </item>
     <item>
       <title>Projekte</title>

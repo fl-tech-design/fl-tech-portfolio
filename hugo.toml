@@ -23,7 +23,6 @@ theme = 'PaperMod'
   ShowShareButtons = true
   ShowCodeCopyButtons = true
   
-   
   [params.profileMode]
     enabled = true
     title = 'fl-tech&design'
@@ -38,25 +37,37 @@ theme = 'PaperMod'
       url = 'about'
 
 [[menu.main]]
-  identifier = "projects"
-  name = "Projekte"
-  url = "/projects/"
+  identifier = "home"
+  name = "Start"
+  url = "/"
   weight = 1
 
 [[menu.main]]
-  identifier = "ideas"
-  name = "Ideas"
-  url = "/ideas/"
+  identifier = "projects"
+  name = "Projekte"
+  url = "/projects/"
   weight = 2
 
 [[menu.main]]
-  identifier = "about"
-  name = "Über mich"
-  url = "/about/"
+  identifier = "ideas"
+  name = "Ideen"
+  url = "/ideas/"
   weight = 3
+
+[[menu.main]]
+  identifier = "musik"
+  name = "Musik"
+  url = "/musik/"
+  weight = 4
 
 [[menu.main]]
   identifier = "contact"
   name = "Kontakt"
   url = "/contact/"
-  weight = 4
+  weight = 5
+
+[[menu.main]]
+  identifier = "about"
+  name = "Über mich"
+  url = "/about/"
+  weight = 6

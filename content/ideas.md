@@ -1,8 +1,8 @@
 ---
-title: "Ideas & Konzepte"
+title: "Ideen & Konzepte"
 date: 2026-03-13
 draft: false
-description: "Offene Ideen und Konzepte für Collaboration"
+description: "Offene Ideen und Konzepte für Zusammenarbeit"
 ---
 
 ## Philosophie

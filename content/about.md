@@ -7,16 +7,31 @@ description: "Über Hanspeter Flütsch - Elektro-Monteur turned Software Develop
 
 ## Beruflicher Weg
 
-Ich bin **Hanspeter Flütsch**, 43 Jahre alt, aus der Schweiz (nahe Zürich).
+Ich bin Hanspeter Flütsch, 43 Jahre alt, aus der Schweiz (nahe Zürich).
 
 Mein Weg war nicht linear – und genau das macht mich stark:
 
-| Zeitraum | Was ich gemacht habe | Was ich gelernt habe |
-|----------|---------------------|---------------------|
-| **20+ Jahre** | Elektro-Monteur | Hardware, Schaltanlagen, praktische Problemlösung |
-| **Seit 2013** | Arduino & Embedded | C/C++, Logik, Hardware-nahe Programmierung |
-| **Seit 2020** | Python Intensiv | Python, Kivy, Git, Linux, Automation |
-| **Heute** | Full-Stack Denker | Hardware + Software + Design |
+<span class="timeline-period">20+ Jahre</span>  
+**Elektro-Monteur**  
+*Hardware, Schaltanlagen, praktische Problemlösung*
+
+---
+
+<span class="timeline-period">Seit 2013</span>  
+**Arduino & Embedded**  
+*C/C++, Logik, Hardware-nahe Programmierung*
+
+---
+
+<span class="timeline-period">Seit 2020</span>  
+**Python Intensiv**  
+*Python, Kivy, Git, Linux, Automation*
+
+---
+
+<span class="timeline-period">Heute</span>  
+**Full-Stack Denker**  
+*Hardware + Software + Design*
 
 ## Philosophie
 
