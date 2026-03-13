@@ -1,0 +1,18 @@
+# .gitignore Datei erstellen oder ergänzen
+Add-Content -Path ".gitignore" -Value @"
+# Hugo generated files
+public/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+"@

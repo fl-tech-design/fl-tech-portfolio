@@ -1,4 +1,4 @@
-<!-- Netzwerk Hintergrund Animation -->
+<!-- Netzwerk Hintergrund Animation + Custom Styles -->
 <style>
   /* === NETWORK CANVAS === */
   #network-canvas {
@@ -178,6 +178,23 @@
     border-color: rgba(0, 160, 255, 0.3) !important;
     box-shadow: 0 0 35px rgba(0, 160, 255, 0.15) !important;
     transition: all 0.3s ease !important;
+  }
+
+  /* === STICKY FOOTER FIX === */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #profile-mode, .main-content, .container, .list-content, .profile-mode {
+    flex: 1 0 auto;
+  }
+  
+  footer.version-footer {
+    margin-top: auto;
+    flex-shrink: 0;
   }
 </style>
 

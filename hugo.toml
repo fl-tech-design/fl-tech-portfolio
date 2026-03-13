@@ -19,9 +19,14 @@ theme = 'PaperMod'
       description = 'Portfolio & Tech Projects by Hanspeter Flütsch'
 
 [params]
+  version = "0.1.0"
+  buildDate = "2026-03-14"
   defaultTheme = 'dark'
   ShowShareButtons = true
   ShowCodeCopyButtons = true
+  
+  [params.footer]
+    copyright = "© 2026 fl-tech&design • v0.1.0"
   
   [params.profileMode]
     enabled = true
